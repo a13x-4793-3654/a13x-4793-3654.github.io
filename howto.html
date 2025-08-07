@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Meta tags and styles will be loaded by common.js -->
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Howto ガイド</h1>
+                <p>役立つ技術情報とチュートリアルを紹介します</p>
+            </div>
+        </section>
+
+        <section class="howto-content">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Howtoを検索...">
+                </div>
+
+                <div class="howto-categories">
+                    <h2>カテゴリー</h2>
+                    <div class="category-grid">
+                        <div class="category-card" data-category="git">
+                            <div class="category-icon">🔧</div>
+                            <h3>Git & GitHub</h3>
+                            <p>バージョン管理とGitHubの活用方法</p>
+                        </div>
+                        <div class="category-card" data-category="web">
+                            <div class="category-icon">🌐</div>
+                            <h3>Web開発</h3>
+                            <p>HTML、CSS、JavaScriptの基礎と応用</p>
+                        </div>
+                        <div class="category-card" data-category="github-pages">
+                            <div class="category-icon">📄</div>
+                            <h3>GitHub Pages</h3>
+                            <p>無料でウェブサイトを公開する方法</p>
+                        </div>
+                        <div class="category-card" data-category="tools">
+                            <div class="category-icon">🛠️</div>
+                            <h3>開発ツール</h3>
+                            <p>効率的な開発のためのツールとテクニック</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="howto-articles">
+                    <h2>最新のHowto記事</h2>
+                    <div class="articles-list" id="articles-list">
+                        <article class="howto-article" data-category="github-pages">
+                            <div class="article-header">
+                                <span class="article-category">GitHub Pages</span>
+                                <span class="article-date">2025/01/07</span>
+                            </div>
+                            <h3><a href="howto/github-pages-setup.html">GitHub Pagesでウェブサイトを公開する方法</a></h3>
+                            <p>GitHubリポジトリからウェブサイトを無料で公開する手順を詳しく解説します。</p>
+                            <div class="article-tags">
+                                <span class="tag">GitHub</span>
+                                <span class="tag">ウェブサイト</span>
+                                <span class="tag">初心者向け</span>
+                            </div>
+                        </article>
+
+                        <article class="howto-article" data-category="web">
+                            <div class="article-header">
+                                <span class="article-category">Web開発</span>
+                                <span class="article-date">準備中</span>
+                            </div>
+                            <h3>レスポンシブデザインの基礎</h3>
+                            <p>様々なデバイスサイズに対応したウェブサイトの作り方を学びます。</p>
+                            <div class="article-tags">
+                                <span class="tag">CSS</span>
+                                <span class="tag">レスポンシブ</span>
+                                <span class="tag">デザイン</span>
+                            </div>
+                        </article>
+
+                        <article class="howto-article" data-category="git">
+                            <div class="article-header">
+                                <span class="article-category">Git & GitHub</span>
+                                <span class="article-date">準備中</span>
+                            </div>
+                            <h3>Gitの基本コマンドと使い方</h3>
+                            <p>バージョン管理システムGitの基本的な操作方法を分かりやすく説明します。</p>
+                            <div class="article-tags">
+                                <span class="tag">Git</span>
+                                <span class="tag">コマンド</span>
+                                <span class="tag">基礎</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="coming-soon">
+                    <h2>今後追加予定のコンテンツ</h2>
+                    <ul>
+                        <li>Python入門チュートリアル</li>
+                        <li>JavaScriptのモダンな書き方</li>
+                        <li>開発環境の設定方法</li>
+                        <li>VSCodeの便利な拡張機能</li>
+                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load common functionality first -->
+    <script src="js/common.js"></script>
+    <!-- Then load page-specific script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

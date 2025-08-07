@@ -1,0 +1,19 @@
+{
+  "breadcrumbs": {
+    "github-pages-setup": {
+      "items": [
+        {"text": "ホーム", "url": "../index.html"},
+        {"text": "Howto", "url": "../howto.html"},
+        {"text": "GitHub Pagesでウェブサイトを公開する方法", "url": null}
+      ]
+    }
+  },
+  "articleMeta": {
+    "github-pages-setup": {
+      "category": "GitHub Pages",
+      "difficulty": "初心者向け",
+      "duration": "約30分",
+      "lastUpdated": "2025年1月7日"
+    }
+  }
+}

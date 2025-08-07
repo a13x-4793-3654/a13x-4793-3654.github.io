@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Meta tags and styles will be loaded by common.js -->
+    <style>
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .article-meta {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .article-content h2 {
+            color: #2c3e50;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        .article-content h3 {
+            color: #34495e;
+            margin: 30px 0 15px 0;
+        }
+        
+        .article-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .article-content ol, 
+        .article-content ul {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+        
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .inline-code {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .info-box {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .breadcrumb {
+            background: #f8f9fa;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+        
+        .breadcrumb a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="../index.html">ホーム</a> > <a href="../howto.html">Howto</a> > GitHub Pagesでウェブサイトを公開する方法
+                </div>
+                <h1>GitHub Pagesでウェブサイトを公開する方法</h1>
+                <p>GitHubリポジトリから無料でウェブサイトを公開しよう</p>
+            </div>
+        </section>
+
+        <section style="padding: 60px 0;">
+            <div class="article-content">
+                <div class="article-meta">
+                    <p><strong>カテゴリー:</strong> GitHub Pages</p>
+                    <p><strong>難易度:</strong> 初心者向け</p>
+                    <p><strong>所要時間:</strong> 約30分</p>
+                    <p><strong>最終更新:</strong> 2025年1月7日</p>
+                </div>
+
+                <h2>はじめに</h2>
+                <p>
+                    GitHub Pagesは、GitHubが提供する無料のウェブホスティングサービスです。
+                    GitHubリポジトリに保存されたHTMLファイルを、インターネット上で公開することができます。
+                    個人のポートフォリオサイトやプロジェクトのドキュメントサイトなどに最適です。
+                </p>
+
+                <div class="info-box">
+                    <strong>このチュートリアルで学べること：</strong>
+                    <ul>
+                        <li>GitHub Pagesの基本的な設定方法</li>
+                        <li>ウェブサイトの公開手順</li>
+                        <li>カスタムドメインの設定（オプション）</li>
+                        <li>よくあるトラブルと解決方法</li>
+                    </ul>
+                </div>
+
+                <h2>必要な準備</h2>
+                <p>このチュートリアルを始める前に、以下が必要です：</p>
+                <ul>
+                    <li>GitHubアカウント（無料で作成可能）</li>
+                    <li>基本的なHTML/CSSの知識</li>
+                    <li>Gitの基本的な使い方の理解（オプション）</li>
+                </ul>
+
+                <h2>ステップ1: GitHubリポジトリの作成</h2>
+                <h3>1-1. 新しいリポジトリを作成</h3>
+                <ol>
+                    <li>GitHubにログインします</li>
+                    <li>右上の「+」ボタンをクリックし、「New repository」を選択</li>
+                    <li>リポジトリ名を入力します
+                        <div class="warning-box">
+                            <strong>重要:</strong> ユーザーサイトの場合は「username.github.io」という形式で名前をつけてください。
+                            （usernameはあなたのGitHubユーザー名）
+                        </div>
+                    </li>
+                    <li>「Public」に設定（GitHub Pagesは公開リポジトリである必要があります）</li>
+                    <li>「Add a README file」にチェック</li>
+                    <li>「Create repository」をクリック</li>
+                </ol>
+
+                <h3>1-2. HTMLファイルの追加</h3>
+                <ol>
+                    <li>作成したリポジトリページで「Add file」→「Create new file」をクリック</li>
+                    <li>ファイル名に<span class="inline-code">index.html</span>と入力</li>
+                    <li>以下の基本的なHTMLコードを入力します：</li>
+                </ol>
+
+                <div class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;私のGitHub Pagesサイト&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Website!&lt;/h1&gt;
+    &lt;p&gt;これは私の最初のGitHub Pagesサイトです。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </div>
+
+                <ol start="4">
+                    <li>「Commit new file」をクリックしてファイルを保存</li>
+                </ol>
+
+                <h2>ステップ2: GitHub Pagesの有効化</h2>
+                <ol>
+                    <li>リポジトリのページで「Settings」タブをクリック</li>
+                    <li>左側のメニューから「Pages」を選択</li>
+                    <li>「Source」セクションで以下を設定：
+                        <ul>
+                            <li>「Deploy from a branch」を選択</li>
+                            <li>ブランチは「main」を選択</li>
+                            <li>フォルダーは「/ (root)」を選択</li>
+                        </ul>
+                    </li>
+                    <li>「Save」をクリック</li>
+                </ol>
+
+                <div class="info-box">
+                    <strong>ヒント:</strong> 設定後、サイトが公開されるまで数分かかる場合があります。
+                    ページ上部に緑色のチェックマークと公開URLが表示されれば完了です。
+                </div>
+
+                <h2>ステップ3: サイトの確認と更新</h2>
+                <h3>3-1. 公開されたサイトの確認</h3>
+                <ol>
+                    <li>GitHub Pagesの設定ページに表示されるURLをクリック</li>
+                    <li>ブラウザで<span class="inline-code">https://username.github.io</span>にアクセス</li>
+                    <li>作成したHTMLファイルの内容が表示されることを確認</li>
+                </ol>
+
+                <h3>3-2. コンテンツの更新</h3>
+                <p>サイトの内容を更新するには：</p>
+                <ol>
+                    <li>リポジトリで更新したいファイルを選択</li>
+                    <li>鉛筆アイコン（Edit this file）をクリック</li>
+                    <li>内容を編集</li>
+                    <li>「Commit changes」で変更を保存</li>
+                    <li>数分後にサイトに反映されます</li>
+                </ol>
+
+                <h2>カスタマイズのヒント</h2>
+                <h3>CSSでスタイリング</h3>
+                <p><span class="inline-code">style.css</span>ファイルを作成してデザインをカスタマイズできます：</p>
+
+                <div class="code-block">
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+                </div>
+
+                <p>HTMLファイルの<span class="inline-code">&lt;head&gt;</span>セクションに以下を追加：</p>
+                <div class="code-block">
+&lt;link rel="stylesheet" href="style.css"&gt;
+                </div>
+
+                <h2>よくあるトラブルシューティング</h2>
+                <h3>問題1: サイトが表示されない</h3>
+                <ul>
+                    <li><strong>解決策:</strong> 
+                        <ul>
+                            <li>数分待ってからアクセスしてみる</li>
+                            <li>ブラウザのキャッシュをクリアする</li>
+                            <li>リポジトリが「Public」になっているか確認</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>問題2: 変更が反映されない</h3>
+                <ul>
+                    <li><strong>解決策:</strong>
+                        <ul>
+                            <li>GitHub Actionsタブで構築状況を確認</li>
+                            <li>ファイルが正しくコミットされているか確認</li>
+                            <li>Hard refresh（Ctrl+F5）を試す</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>次のステップ</h2>
+                <p>基本的なGitHub Pagesサイトができたら、以下を試してみてください：</p>
+                <ul>
+                    <li>複数のページを作成してナビゲーションを追加</li>
+                    <li>Jekyll（静的サイトジェネレーター）の利用</li>
+                    <li>カスタムドメインの設定</li>
+                    <li>Google Analyticsの導入</li>
+                </ul>
+
+                <div class="info-box">
+                    <strong>おめでとうございます！</strong>
+                    これでGitHub Pagesを使った基本的なウェブサイトの公開方法をマスターしました。
+                    継続的に更新して、素晴らしいサイトを作り上げてください。
+                </div>
+
+                <p style="text-align: center; margin-top: 40px;">
+                    <a href="../howto.html" class="btn btn-primary">Howto一覧に戻る</a>
+                </p>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load common functionality first -->
+    <script src="../js/common.js"></script>
+    <!-- Then load page-specific script -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

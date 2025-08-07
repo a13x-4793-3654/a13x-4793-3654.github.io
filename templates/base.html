@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Meta tags and styles will be loaded by common.js -->
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Page-specific content goes here -->
+        <slot name="main-content"></slot>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load common functionality first -->
+    <script src="js/common.js"></script>
+    <!-- Then load page-specific script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

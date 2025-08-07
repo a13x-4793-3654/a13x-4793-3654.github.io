@@ -1,0 +1,36 @@
+{
+  "header": {
+    "html": "<header><nav class=\"navbar\"><div class=\"nav-container\"><div class=\"nav-logo\"><a href=\"index.html\">a13x</a></div><ul class=\"nav-menu\"><li class=\"nav-item\"><a href=\"index.html\" class=\"nav-link\" data-page=\"index\">ホーム</a></li><li class=\"nav-item\"><a href=\"about.html\" class=\"nav-link\" data-page=\"about\">自己紹介</a></li><li class=\"nav-item\"><a href=\"howto.html\" class=\"nav-link\" data-page=\"howto\">Howto</a></li></ul><div class=\"nav-toggle\" id=\"mobile-menu\"><span class=\"bar\"></span><span class=\"bar\"></span><span class=\"bar\"></span></div></div></nav></header>"
+  },
+  "footer": {
+    "html": "<footer><div class=\"container\"><p>&copy; 2025 a13x. All rights reserved.</p><div class=\"footer-links\"><a href=\"https://github.com/a13x-4793-3654\" target=\"_blank\">GitHub</a></div></div></footer>"
+  },
+  "meta": {
+    "charset": "UTF-8",
+    "viewport": "width=device-width, initial-scale=1.0",
+    "fonts": {
+      "preconnect": ["https://fonts.googleapis.com", "https://fonts.gstatic.com"],
+      "stylesheet": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+    },
+    "css": "css/style.css",
+    "js": "js/script.js"
+  },
+  "pages": {
+    "index": {
+      "title": "a13x - 自己紹介 & Howto サイト",
+      "active": "index"
+    },
+    "about": {
+      "title": "自己紹介 - a13x",
+      "active": "about"
+    },
+    "howto": {
+      "title": "Howto - a13x",
+      "active": "howto"
+    },
+    "github-pages-setup": {
+      "title": "GitHub Pagesでウェブサイトを公開する方法 - a13x",
+      "active": "howto"
+    }
+  }
+}
