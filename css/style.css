@@ -392,6 +392,162 @@ main {
     background: #2980b9;
 }
 
+/* New styles for enhanced about page */
+.note-box {
+    background: #f8f9fa;
+    border: 1px solid #e1e8ed;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+
+.hobbies-section,
+.social-accounts-section {
+    margin-bottom: 60px;
+}
+
+.hobbies-content,
+.accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.hobby-item,
+.account-item {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.hobby-item h4,
+.account-item h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.email-contact {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #27ae60;
+    margin-bottom: 20px;
+}
+
+.email-contact h4 {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.email-contact .note {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.privacy-note,
+.privacy-note-en {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-left: 4px solid #f39c12;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+
+/* English Section Styles */
+.english-section {
+    margin-top: 80px;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.english-section h3 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.english-content h4 {
+    color: #34495e;
+    margin: 30px 0 15px 0;
+    font-size: 1.3rem;
+}
+
+.english-content h5 {
+    color: #2c3e50;
+    margin: 20px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.english-content h6 {
+    color: #34495e;
+    margin: 15px 0 5px 0;
+    font-size: 1rem;
+}
+
+.english-about {
+    margin-top: 20px;
+}
+
+.english-hobby,
+.english-tech {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.tech-categories {
+    margin-top: 20px;
+}
+
+.tech-category {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #27ae60;
+}
+
+.business-note {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border-left: 4px solid #17a2b8;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+
+.english-contact {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #27ae60;
+    margin: 15px 0;
+}
+
+.english-contact .note {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
 /* Howto Page Styles */
 .howto-content {
     padding: 80px 0;
