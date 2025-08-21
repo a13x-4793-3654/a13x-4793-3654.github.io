@@ -20,8 +20,12 @@ class SiteLoader {
         const path = window.location.pathname;
         const fileName = path.split('/').pop().replace('.html', '');
         
-        // Check for specific file names first
-        if (fileName === 'github-pages-setup') return 'github-pages-setup';
+        // If we're in the articles directory, return the filename as is
+        if (path.includes('/articles/') || path.includes('\\articles\\')) {
+            return fileName;
+        }
+        
+        // Check for specific page names
         if (path.includes('about')) return 'about';
         if (path.includes('howto')) return 'howto';
         return 'index';
