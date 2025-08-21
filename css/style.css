@@ -1099,3 +1099,34 @@ footer {
         padding: 15px;
     }
 }
+
+/* ===== Article Page Header (about.html style alignment) ===== */
+.article-page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        padding: 70px 0 50px;
+        text-align: center;
+        margin-top: -70px; /* neutralize main top margin so header touches global nav */
+}
+
+.article-page-header .container { max-width: 900px; }
+.article-page-header h1 { font-size: 2.8rem; margin-bottom: 25px; line-height: 1.25; }
+.article-page-header .article-meta { background: rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.3); border-left:4px solid #fff; color:#fff; display:flex; flex-wrap:wrap; justify-content:center; gap:14px 32px; margin:0 auto; max-width:900px; }
+.article-page-header .article-meta p { margin:4px 0; font-size:0.85rem; color:#fff; }
+.article-page-header .article-meta strong { color:#fff; }
+.article-page-header .breadcrumb, .article-page-header nav.breadcrumb { background: transparent; padding:0; margin:0 0 18px; font-size:0.8rem; }
+.article-page-header .breadcrumb a { color:#fff; opacity:.95; }
+.article-page-header .breadcrumb a:hover { text-decoration:underline; }
+
+/* Adjust main article section spacing since header has its own padding */
+article.article-content { padding-top: 40px; }
+
+/* Dark theme compatibility placeholder */
+body.theme-dark .article-page-header { background: linear-gradient(135deg,#2c3e50 0%, #182233 100%); }
+body.theme-dark .article-page-header .article-meta { border-color: rgba(255,255,255,0.25); }
+
+@media screen and (max-width: 768px) {
+    .article-page-header { padding: 90px 0 40px; }
+    .article-page-header h1 { font-size: 2.1rem; }
+    article.article-content { padding-top: 10px; }
+}
