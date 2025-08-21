@@ -970,81 +970,44 @@ footer {
 .article-content {
     max-width: 800px;
     margin: 0 auto;
-    /* ヘッダー固定(高さ70px + 余白) を考慮 */
-    padding: 110px 20px 60px;
+    padding: 40px 20px 60px;
 }
 
-/* Article page header */
- .article-page-header {
-    margin-bottom: 40px;
+/* Article page header (howtoと整合) */
+.article-header-wrapper {
+    padding: 120px 0 40px; /* 固定ヘッダー分 + 余白 */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 40px 30px 35px;
-    border-radius: 14px;
     color: #fff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    position: relative;
-    overflow: hidden;
- }
-
-.article-page-header:before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    right: -40px;
-    width: 160px;
-    height: 160px;
-    background: rgba(255,255,255,0.12);
-    border-radius: 50%;
-    filter: blur(2px);
+    text-align: center;
 }
 
-.article-page-header:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: -30px;
-    width: 120px;
-    height: 120px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 50%;
-    filter: blur(1px);
-}
-
-.article-page-header h1 {
-    color: #fff;
-    margin: 0 0 18px;
-    font-size: 2.6rem;
-    line-height: 1.25;
-    text-align: left;
+.article-header-wrapper h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
 }
 
 @media (max-width: 640px) {
-    .article-content { padding: 100px 16px 50px; }
-    .article-page-header { padding: 32px 22px 28px; }
-    .article-page-header h1 { font-size: 2.1rem; }
+    .article-header-wrapper { padding: 110px 0 32px; }
+    .article-header-wrapper h1 { font-size: 2.2rem; }
+    .article-content { padding-top: 40px; }
 }
 
  .article-meta {
-    background: rgba(255,255,255,0.18);
-    backdrop-filter: blur(4px) saturate(160%);
-    -webkit-backdrop-filter: blur(4px) saturate(160%);
-    padding: 18px 20px;
-    border-radius: 10px;
-    margin-bottom: 0;
-    border: 1px solid rgba(255,255,255,0.3);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 12px 20px;
+    background: #f8f9fa;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin: 0 auto 10px;
+    border-left: 5px solid #ffda79;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 30px;
+    justify-content: center;
 }
 
- .article-meta p {
-    margin: 0;
-    color: #fff;
-    font-size: 0.85rem;
-    line-height: 1.4;
-}
-
- .article-meta strong { color: #fff; font-weight: 600; }
+ .article-meta p { margin: 0; color: #5a6c7d; font-size: 0.9rem; }
+ .article-meta strong { color: #2c3e50; font-weight: 600; }
 
 .article-body {
     line-height: 1.8;
