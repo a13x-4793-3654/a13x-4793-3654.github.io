@@ -389,7 +389,7 @@ class SiteLoader {
         if (articlesList && pageData.articles && pageData.articles.items) {
             articlesList.innerHTML = pageData.articles.items.map(article => `
                 <article class="howto-article" data-category="${article.category}">
-                    <div class="article-header">
+                    <div class="howto-article-header">
                         <span class="article-category">${article.categoryName}</span>
                         <span class="article-date">${article.date}</span>
                     </div>
