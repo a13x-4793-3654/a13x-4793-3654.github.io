@@ -2,136 +2,60 @@
 <html lang="ja">
 <head>
     <!-- Meta tags and styles will be loaded by common.js -->
-    <style>
-        /* Article-specific styles */
-        .article-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .article-meta {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            border-left: 4px solid #3498db;
-        }
-        
-        .article-content h2 {
-            color: #2c3e50;
-            margin: 40px 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #ecf0f1;
-        }
-        
-        .article-content h3 {
-            color: #34495e;
-            margin: 30px 0 15px 0;
-        }
-        
-        .article-content p {
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-        
-        .article-content ol, 
-        .article-content ul {
-            margin-bottom: 20px;
-            padding-left: 30px;
-        }
-        
-        .article-content li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-        
-        .code-block {
-            background: #2c3e50;
-            color: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            overflow-x: auto;
-            font-family: 'Courier New', monospace;
-        }
-        
-        .inline-code {
-            background: #ecf0f1;
-            color: #2c3e50;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9em;
-        }
-        
-        .warning-box {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-left: 4px solid #f39c12;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        
-        .info-box {
-            background: #d1ecf1;
-            border: 1px solid #bee5eb;
-            border-left: 4px solid #17a2b8;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        
-        .breadcrumb {
-            background: #f8f9fa;
-            padding: 10px 0;
-            margin-bottom: 30px;
-        }
-        
-        .breadcrumb a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
     <main>
-        <section class="page-header">
+        <article class="article-content">
             <div class="container">
-                <div class="breadcrumb">
-                    <a href="../index.html">ホーム</a> > <a href="../howto.html">Howto</a> > [記事タイトル]
+                <header class="article-header">
+                    <!-- Breadcrumb navigation -->
+                    <nav class="breadcrumb" id="breadcrumb-nav"></nav>
+                    <h1>[記事タイトル]</h1>
+                    <div class="article-meta" id="article-meta"></div>
+                </header>
+
+                <div class="article-body">
+                    <h2>はじめに</h2>
+                    <p>記事の内容をここに記述します...</p>
+
+                    <!-- 警告の例 -->
+                    <div class="alert alert-warning">
+                        <h4>注意</h4>
+                        <p>重要な注意事項をここに記述します。</p>
+                    </div>
+
+                    <!-- 情報ボックスの例 -->
+                    <div class="info-box">
+                        <strong>ポイント:</strong>
+                        <ul>
+                            <li>ポイント1</li>
+                            <li>ポイント2</li>
+                            <li>ポイント3</li>
+                        </ul>
+                    </div>
+
+                    <!-- コードブロックの例 -->
+                    <div class="code-block">
+// コード例
+function example() {
+    console.log("Hello, World!");
+}
+                    </div>
+
+                    <h2>まとめ</h2>
+                    <p>記事のまとめをここに記述します...</p>
                 </div>
-                <h1>[記事タイトル]</h1>
-                <p>[記事サブタイトル]</p>
+
+                <footer class="article-footer">
+                    <div class="article-navigation">
+                        <a href="../howto.html" class="back-to-list">← Howto ガイドに戻る</a>
+                    </div>
+                </footer>
             </div>
-        </section>
-
-        <section style="padding: 60px 0;">
-            <div class="article-content">
-                <div class="article-meta">
-                    <p><strong>カテゴリー:</strong> [カテゴリー]</p>
-                    <p><strong>難易度:</strong> [難易度]</p>
-                    <p><strong>所要時間:</strong> [所要時間]</p>
-                    <p><strong>最終更新:</strong> [更新日]</p>
-                </div>
-
-                <!-- ここに記事の内容を記述 -->
-                <h2>はじめに</h2>
-                <p>記事の内容をここに記述します...</p>
-
-                <p style="text-align: center; margin-top: 40px;">
-                    <a href="../howto.html" class="btn btn-primary">Howto一覧に戻る</a>
-                </p>
-            </div>
-        </section>
+        </article>
     </main>
 
     <!-- Footer Placeholder -->
@@ -139,7 +63,7 @@
 
     <!-- Load common functionality first -->
     <script src="../js/common.js"></script>
-    <!-- Then load page-specific script -->
-    <script src="../js/script.js"></script>
+    <!-- Load article-specific functionality -->
+    <script src="../js/article.js"></script>
 </body>
 </html>

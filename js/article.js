@@ -7,13 +7,18 @@ class ArticleLoader {
 
     getArticleId() {
         const path = window.location.pathname;
-        return path.split('/').pop().replace('.html', '');
+        const articleId = path.split('/').pop().replace('.html', '');
+        console.log('Article ID:', articleId);
+        return articleId;
     }
 
     async loadArticleData() {
         try {
+            console.log('Loading article data from:', `${this.basePath}data/articles.json`);
             const response = await fetch(`${this.basePath}data/articles.json`);
-            return await response.json();
+            const data = await response.json();
+            console.log('Article data loaded:', data);
+            return data;
         } catch (error) {
             console.error('Failed to load article data:', error);
             return null;
@@ -37,15 +42,22 @@ class ArticleLoader {
     }
 
     loadArticleMeta(articleData) {
+        console.log('Loading meta for article:', this.articleId);
         const articleMeta = document.getElementById('article-meta');
+        console.log('Article meta element:', articleMeta);
+        
         if (articleMeta && articleData.articleMeta[this.articleId]) {
             const meta = articleData.articleMeta[this.articleId];
+            console.log('Meta data:', meta);
             articleMeta.innerHTML = `
                 <p><strong>カテゴリー:</strong> ${meta.category}</p>
                 <p><strong>難易度:</strong> ${meta.difficulty}</p>
                 <p><strong>所要時間:</strong> ${meta.duration}</p>
                 <p><strong>最終更新:</strong> ${meta.lastUpdated}</p>
             `;
+            console.log('Meta data loaded successfully');
+        } else {
+            console.log('No meta data found for article:', this.articleId);
         }
     }
 
@@ -58,8 +70,11 @@ class ArticleLoader {
     }
 }
 
-// Initialize article loader
+// Initialize article loader after common.js has finished
 document.addEventListener('DOMContentLoaded', () => {
-    const articleLoader = new ArticleLoader();
-    articleLoader.init();
+    // Wait for common.js to finish loading the basic structure
+    setTimeout(() => {
+        const articleLoader = new ArticleLoader();
+        articleLoader.init();
+    }, 200);
 });
