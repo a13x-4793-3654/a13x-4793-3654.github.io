@@ -397,6 +397,38 @@ class SiteLoader {
                 </article>
             `).join('');
         }
+
+        // Re-initialize category filtering after content is loaded
+        setTimeout(() => {
+            this.initializeCategoryFiltering();
+        }, 100);
+    }
+
+    initializeCategoryFiltering() {
+        // Category filtering
+        const categoryCards = document.querySelectorAll('.category-card');
+        
+        categoryCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                const articles = document.querySelectorAll('.howto-article');
+
+                articles.forEach(article => {
+                    const articleCategory = article.getAttribute('data-category');
+                    
+                    if (articleCategory === category || !category) {
+                        article.style.display = 'block';
+                        article.style.animation = 'fadeInUp 0.3s ease-out';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+
+                // Visual feedback for selected category
+                categoryCards.forEach(c => c.classList.remove('selected'));
+                this.classList.add('selected');
+            });
+        });
     }
 
     async init() {
