@@ -1,5 +1,12 @@
 {
   "breadcrumbs": {
+    "microsoft-support-scam": {
+      "items": [
+        {"text": "ホーム", "url": "../index.html"},
+        {"text": "Howto", "url": "../howto.html"},
+        {"text": "Microsoft サポートを騙った詐欺について説明してみた", "url": null}
+      ]
+    },
     "github-pages-setup": {
       "items": [
         {"text": "ホーム", "url": "../index.html"},
@@ -9,8 +16,14 @@
     }
   },
   "articleMeta": {
+    "microsoft-support-scam": {
+      "category": "セキュリティ",
+      "difficulty": "初心者向け",
+      "duration": "約15分",
+      "lastUpdated": "2025年1月7日"
+    },
     "github-pages-setup": {
-      "category": "GitHub Pages",
+      "category": "Web開発",
       "difficulty": "初心者向け",
       "duration": "約30分",
       "lastUpdated": "2025年1月7日"

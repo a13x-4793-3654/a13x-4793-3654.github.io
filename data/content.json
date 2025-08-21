@@ -1,0 +1,346 @@
+{
+  "pages": {
+    "index": {
+      "hero": {
+        "title": "Welcome to a13x",
+        "description": "自己紹介と Howto を発信するサイトです。<br>プログラミング、技術、日常の学びを共有していきます。",
+        "buttons": [
+          {
+            "text": "自己紹介を見る",
+            "href": "about.html",
+            "class": "btn-primary"
+          },
+          {
+            "text": "記事を見る", 
+            "href": "howto.html",
+            "class": "btn-secondary"
+          }
+        ]
+      },
+      "features": {
+        "title": "サイトの特徴",
+        "items": [
+          {
+            "icon": "👤",
+            "title": "自己紹介",
+            "description": "私の経歴、スキル、興味のある分野について詳しく紹介しています。"
+          },
+          {
+            "icon": "📚",
+            "title": "記事について",
+            "description": "私が、日常の中で学んだことや、役立つ情報を分かりやすくまとめています。"
+          },
+          {
+            "icon": "🔄",
+            "title": "継続的更新",
+            "description": "新しい学びや発見を定期的に追加し、コンテンツを充実させています。"
+          }
+        ]
+      }
+    },
+    "about": {
+      "header": {
+        "title": "自己紹介",
+        "subtitle": "私について少しお話しします"
+      },
+      "profile": {
+        "name": "a13x",
+        "avatar": "a13x",
+        "title": "Developer / Tech Enthusiast / Rhythm Gamer",
+        "description": "こんにちは！私はa13xです。プログラミングや技術に情熱を注ぎながら、音楽ゲームも楽しんでいます。<br>このサイトを通じて、ITの学びや経験、そして日常の発見を共有していきます。<br><strong>* For self-introductions in English, please see the lower side.</strong>"
+      },
+      "skills": {
+        "title": "スキル・興味分野",
+        "categories": [
+          {
+            "title": "プログラミング言語",
+            "items": ["JavaScript", "Python", "PHP", "VB.NET", "HTML/CSS"]
+          },
+          {
+            "title": "サービス・アプリケーション",
+            "items": ["Azure / Microsoft 365", "Power Platform (Automate, Apps, Copilot Studio)", "Dynamics 365", "Jamf", "Docker / Kubernetes", "FreePBX"]
+          },
+          {
+            "title": "フレームワーク・その他",
+            "items": ["Django", "Git / GitHub", "RTX1200 / RTX1210", "Aspire UX", "レスポンシブデザイン"]
+          }
+        ],
+        "note": "上記の中でも、Power Platform製品及び、Dynamics 365に関しては業務にて使用しております。<br>その他は趣味の範囲での学習・使用となります。"
+      },
+      "experience": {
+        "title": "経験・プロジェクト",
+        "items": [
+          {
+            "date": "2025",
+            "title": "GitHub Pagesサイト開設",
+            "description": "自己紹介とHowtoを発信するためのウェブサイトを開設しました。"
+          }
+        ]
+      },
+      "hobbies": {
+        "title": "趣味・その他の活動",
+        "items": [
+          {
+            "icon": "🎵",
+            "title": "音楽ゲーム",
+            "description": "SOUND VOLTEX (SDVX)、beatmania IIDX (2DX)、CHUNITHM などを中心に、様々な音楽ゲームを楽しんでいます。"
+          },
+          {
+            "icon": "💻",
+            "title": "技術学習",
+            "description": "新しい技術やフレームワークの学習、オープンソースプロジェクトへの貢献に興味を持っています。"
+          }
+        ]
+      },
+      "social": {
+        "title": "SNSアカウントについて",
+        "description": "Twitterアカウントについては、用途別に2種類のアカウントを運用しております：",
+        "accounts": [
+          {
+            "name": "B41N",
+            "description": "主に音楽ゲームに関するツイートを行っております。",
+            "url": "https://x.com/b41n_6297_5416",
+            "handle": "@b41n_6297_5416"
+          },
+          {
+            "name": "A13X",
+            "description": "主に日常やプログラミング（IT系）などをツイートしています。",
+            "url": "https://x.com/a13x_4793_3654",
+            "handle": "@a13x_4793_3654"
+          }
+        ]
+      },
+      "contact": {
+        "title": "コンタクト",
+        "description": "ポートフォリオのご確認やお仕事のご相談、その他のお問い合わせがございましたら、以下のメールアドレスまでお気軽にご連絡ください。",
+        "email": {
+          "title": "📧 メール",
+          "address": "a13x[at]hdk-atom.jp",
+          "note": "※ [at] を @ に読み替えてください。"
+        },
+        "links": [
+          {
+            "text": "GitHub",
+            "url": "https://github.com/a13x-4793-3654"
+          }
+        ],
+        "privacy": "身バレ防止の観点から、具体的な職種や業務内容については非開示とさせていただいております。ご了承ください。"
+      },
+      "english": {
+        "title": "🌐 For English Speakers",
+        "social": {
+          "title": "About Twitter Accounts",
+          "description": "There are two types of Twitter accounts, each with different purposes:",
+          "accounts": [
+            {
+              "name": "B41N",
+              "description": "This account mainly tweets about music games.",
+              "url": "https://x.com/b41n_6297_5416",
+              "handle": "@b41n_6297_5416"
+            },
+            {
+              "name": "A13X", 
+              "description": "This account tweets mainly about daily life and programming (IT-related).",
+              "url": "https://x.com/a13x_4793_3654",
+              "handle": "@a13x_4793_3654"
+            }
+          ]
+        },
+        "about": {
+          "title": "About Me",
+          "hobbies": {
+            "title": "🎵 Music Games",
+            "description": "I play SDVX, 2DX, CHUNITHM, etc. I also play various other games."
+          },
+          "tech": {
+            "title": "💻 IT & Programming",
+            "description": "All of them are my hobbies, but some of them are used in business.",
+            "categories": [
+              {
+                "title": "Programming Languages",
+                "items": "JavaScript / PHP / VB.NET / Python"
+              },
+              {
+                "title": "Services & Applications",
+                "items": "Jamf / Azure / Microsoft 365 / Power Platform (Automate, Apps, Copilot Studio, Microsoft 365 Copilot) / Dynamics 365 / Docker / Kubernetes / FreePBX"
+              },
+              {
+                "title": "Framework",
+                "items": "Django"
+              },
+              {
+                "title": "Physical Products",
+                "items": "RTX1200 / RTX1210 / Aspire UX"
+              }
+            ],
+            "note": "Among the above, I use Power Platform products and Dynamics 365 in my work."
+          }
+        },
+        "contact": {
+          "title": "Contact",
+          "description": "If you would like to check our portfolio or have any inquiries, please contact us at the following email address:",
+          "email": "📧 a13x[at]hdk-atom.jp",
+          "note": "* Please replace [at] with @.",
+          "privacy": "Please note that we do not disclose the type of work we do or what we do in order to prevent identity disclosure."
+        }
+      }
+    },
+    "howto": {
+      "header": {
+        "title": "Howto ガイド",
+        "subtitle": "役立つ技術情報とチュートリアルを紹介します"
+      },
+      "search": {
+        "placeholder": "Howtoを検索..."
+      },
+      "categories": {
+        "title": "カテゴリー",
+        "items": [
+          {
+            "id": "azure",
+            "icon": "☁️",
+            "title": "Azure / Microsoft 365",
+            "description": "Azure AD とオンプレミス AD の連携に関する技術記事"
+          },
+          {
+            "id": "linux",
+            "icon": "🐧",
+            "title": "Linux / Apache",
+            "description": "CentOS 7 での Apache モジュールインストールとサーバー構築"
+          },
+          {
+            "id": "network",
+            "icon": "🌐",
+            "title": "ネットワーク / ドメイン",
+            "description": "ドメイン移管と光回線の実体験記事"
+          },
+          {
+            "id": "ai",
+            "icon": "🤖",
+            "title": "AI・テクノロジー",
+            "description": "AI 技術の適切な活用と課題について"
+          },
+          {
+            "id": "platform",
+            "icon": "🎬",
+            "title": "プラットフォーム・サービス",
+            "description": "各種プラットフォームの詳細解説と実体験"
+          },
+          {
+            "id": "finance",
+            "icon": "💳",
+            "title": "金融・決済",
+            "description": "クレジットカードやフィンテックサービスの体験談"
+          },
+          {
+            "id": "security",
+            "icon": "🔒",
+            "title": "セキュリティ",
+            "description": "セキュリティに関する記事"
+          },
+          {
+            "id": "webdev",
+            "icon": "🌐",
+            "title": "Web開発",
+            "description": "ウェブサイト制作・開発に関する記事"
+          }
+        ]
+      },
+      "articles": {
+        "title": "技術記事一覧",
+        "items": [
+          {
+            "category": "azure",
+            "categoryName": "Azure / Microsoft 365",
+            "date": "Qiita記事",
+            "title": "AzureADとオンプレADをハードマッチさせてユーザを整合性を保つ方法",
+            "url": "https://qiita.com/a13x/items/96b72061a9f64874fe9e",
+            "external": true,
+            "description": "PowerShellを使用してAzure ADとオンプレミスActive Directoryのユーザーアカウントをハードマッチさせる手順を詳しく解説しています。",
+            "tags": ["Azure AD", "PowerShell", "Active Directory"]
+          },
+          {
+            "category": "linux",
+            "categoryName": "Linux / Apache",
+            "date": "Qiita記事",
+            "title": "CentOS 7でmod_auth_mysqlをインストールする方法",
+            "url": "https://qiita.com/a13x/items/5b01bd7811f882f2dbb0",
+            "external": true,
+            "description": "CentOS 7環境でApacheのMySQL認証モジュール（mod_auth_mysql）をソースからコンパイルしてインストールする手順を解説しています。",
+            "tags": ["CentOS 7", "Apache", "MySQL", "mod_auth_mysql"]
+          },
+          {
+            "category": "network",
+            "categoryName": "ネットワーク / ドメイン",
+            "date": "Qiita記事",
+            "title": "お名前.comからGoDaddyに汎用JPドメインを移管しようとしたら詰まった話",
+            "url": "https://qiita.com/a13x/items/31cb1095aee50d06dc72",
+            "external": true,
+            "description": "お名前.comからGoDaddyへの.jpドメイン移管時に遭遇したトラブルと解決方法について実体験を交えて解説しています。",
+            "tags": ["ドメイン移管", "お名前.com", "GoDaddy", ".jpドメイン"]
+          },
+          {
+            "category": "network",
+            "categoryName": "ネットワーク / ドメイン",
+            "date": "note記事",
+            "title": "フレッツ光クロス(10Gbps)にした感想",
+            "url": "https://note.com/a13x_4793_3654/n/n63498517c471",
+            "external": true,
+            "description": "@T COM ヒカリの10Gbpsプランを契約してフレッツ光クロスを導入した実体験と注意点について詳しく解説しています。",
+            "tags": ["フレッツ光クロス", "10Gbps", "@T COM", "ネットワーク構築"]
+          },
+          {
+            "category": "ai",
+            "categoryName": "AI・テクノロジー",
+            "date": "note記事",
+            "title": "AIを使うということ、使われるということ",
+            "url": "https://note.com/a13x_4793_3654/n/n69b43ece980a",
+            "external": true,
+            "description": "責任あるAIの概念と、AIツールを適切に活用するために考慮すべき点について考察した記事です。",
+            "tags": ["AI", "責任あるAI", "Microsoft Copilot", "技術倫理"]
+          },
+          {
+            "category": "platform",
+            "categoryName": "プラットフォーム・サービス",
+            "date": "note記事",
+            "title": "ニコニコ動画のクリエイター奨励プログラムの親子関係について聞いた",
+            "url": "https://note.com/a13x_4793_3654/n/n49de8c7f05fc",
+            "external": true,
+            "description": "ニコニコ動画のクリエイター奨励プログラムにおけるコンテンツツリー（親子関係）の設定が収益配分に与える影響について詳しく解説しています。",
+            "tags": ["ニコニコ動画", "クリエイター奨励プログラム", "コンテンツツリー", "収益配分"]
+          },
+          {
+            "category": "finance",
+            "categoryName": "金融・決済",
+            "date": "note記事",
+            "title": "Oliveって再発行時に再審査をするらしい？",
+            "url": "https://note.com/a13x_4793_3654/n/n8c4d1e2af760",
+            "external": true,
+            "description": "三井住友銀行のOliveフレキシブルペイの再発行時の審査について、実際に複数の窓口に問い合わせた結果をまとめた体験談です。",
+            "tags": ["Olive", "三井住友銀行", "三井住友カード", "フレキシブルペイ"]
+          },
+          {
+            "category": "security",
+            "categoryName": "セキュリティ",
+            "date": "サイト内記事",
+            "title": "Microsoft サポートを騙った詐欺について説明してみた",
+            "url": "articles/microsoft-support-scam.html",
+            "external": false,
+            "description": "Microsoft サポートを装った詐欺の手口と対策について詳しく解説した記事です。",
+            "tags": ["Microsoft", "詐欺", "サポート詐欺", "セキュリティ"]
+          },
+          {
+            "category": "webdev",
+            "categoryName": "Web開発",
+            "date": "サイト内記事", 
+            "title": "GitHub Pagesでウェブサイトを公開する方法",
+            "url": "articles/github-pages-setup.html",
+            "external": false,
+            "description": "GitHub Pagesを使って静的サイトを無料で公開する方法を詳しく解説します。",
+            "tags": ["GitHub Pages", "静的サイト", "Web開発", "Git"]
+          }
+        ]
+      }
+    }
+  }
+}

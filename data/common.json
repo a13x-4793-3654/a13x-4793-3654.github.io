@@ -31,6 +31,10 @@
     "github-pages-setup": {
       "title": "GitHub Pagesでウェブサイトを公開する方法 - a13x",
       "active": "howto"
+    },
+    "microsoft-support-scam": {
+      "title": "Microsoft サポートを騙った詐欺について説明してみた - a13x",
+      "active": "howto"
     }
   }
 }
